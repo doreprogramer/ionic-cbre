@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      CBRE
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h1>Camera</h1>
+  <button ion-button block (click)="getPicture()">Toma una foto</button>
+  <img [src]="image" *ngIf="image" />
+</ion-content>
